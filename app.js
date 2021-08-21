@@ -70,10 +70,42 @@ function updateTotal() {
     const deliveryCharge = parseInt(deliveryField.innerText);
     const bestPriceCharge = Number(bestPriceField.innerText);
     //console.log(deliveryField.innerText)
-    
-    console.log(deliveryCharge)
+  
+   // console.log(deliveryCharge)
     const total = extraMemoryCharge + extraStorageCharge + deliveryCharge + bestPriceCharge;
     totalField.innerText = total
-    //console.log(extraMemoryField.innerText, extraStorageField.innerText,deliveryField.innerText ,totalField.innerText)
+   
+   // get end total
+    const endTotal = document.getElementById("end-total")
+    endTotal.innerText = total
 
+ 
 }
+
+
+//for bonus marks
+
+
+//get apply button
+
+const applyButton = document.getElementById("apply-button")
+
+// promoInput
+const promoInput = document.getElementById("promo-input")
+const userPromoInput = promoInput.value;
+
+
+const endTotal = document.getElementById("end-total")
+
+applyButton.addEventListener("click", function() {
+    const promoInput = document.getElementById("promo-input")
+    const userPromoInput = promoInput.value;
+    updateTotal() 
+
+    if(userPromoInput == 'stevekaku'){
+       endTotal.innerText = Number(endTotal.innerText)-(Number(endTotal.innerText)*20/100);
+    }
+    else{
+        console.log('wrong code')
+    }
+})

@@ -101,11 +101,16 @@ applyButton.addEventListener("click", function() {
     const promoInput = document.getElementById("promo-input")
     const userPromoInput = promoInput.value;
     updateTotal() 
-
+   
     if(userPromoInput == 'stevekaku'){
        endTotal.innerText = Number(endTotal.innerText)-(Number(endTotal.innerText)*20/100);
     }
     else{
         console.log('wrong code')
     }
+
+// if you want to add discount youhave to write stevekaku and click the button every time 
+
+   //clearing promoinput
+    promoInput.value = ''
 })

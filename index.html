@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-----bootstrap cdn---->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <h1>hello, world!</h1>
+     <div class="container d-flex">
+      <div class="col-lg-6">
+          <img class="img-fluid mx-5" src="images/mac.png" alt="">
+      </div>
+       <div class="col-lg-6 mx-5 p-5">
+           <h1 class="mx-5">Customize your Blue 24-inc IMac with apple M1 chip.</h1>
+           <p class="mx-5">Apple M1 chip with B-core CPU with 4 performance core and 4 efficiency cores ,7 -core CPU ,and 16-core Natural Engine 8GB unified memory 256 GB SSD storage  Two Thunderbolt / USB 4 ports Magic Mouse Magic Keybord.
+               US English
+           </p>
+
+           <h4 class="mx-5">Memory</h4>
+           <button id="First-memory" class="btn-css  py-2 ms-5" >8 GB unified memory </button>
+           <button id="Second-memory" class="btn-css  py-2 ">16 GB unified memory</button>
+
+        <h4 class="mt-5 mx-5">storage</h4>
+        
+        <button id="first-ssd" class="btn-css  py-2 ms-5">256 GB SSD storage memory</button>
+        <button id="second-ssd"  class="btn-css  py-2 ">512 GB SSD storage memory</button>
+        <button id="third-ssd"  class="btn-css  py-2 my-2 mx-5 ">1 TB SSD storage memory</button>
+
+        <h4 class="ms-5 mt-5"> Choose your delivery option</h4>
+        <button id="free-delivery" class="btn-css  py-2 ms-5">Friday Aug 25 Free Prime delivery</button>
+        <button id="charge-delivery" class="btn-css  py-2 ms-5 mt-1">Friday Aug 21 delivery charge $20</button>
+
+        
+        <table class="table mt-5">
+            <thead>
+              <tr>
+                <th scope="col">Best Price</th>
+                <th scope="col">$<span id="best-price-field">1299</span></th>
+              </tr>
+              <tr>
+                <th scope="col">Extra memory Cost</th>
+                <th scope="col">$<span id="extra-memory-field">0</span></th>
+              </tr>
+              <tr>
+                <th scope="col">Extra Storage Cost</th>
+                <th scope="col">$<span id="extra-storage-field">0</span></th>
+              </tr>
+              <tr>
+                <th scope="col">Delivery Charge</th>
+                <th scope="col">$<span id="delivery-field">0</span></th>
+              </tr>
+             
+            </thead>
+            <tbody>
+            
+              <tr>
+                
+                <td class="fw-bolder">Total Price</td>
+                <td class="fw-bolder">$<span id="total-price-field">1299</span></td>
+               
+              </tr>
+
+            </tbody>
+          </table>
+       </div>
+
+     </div>
+
+     <script src="app.js"></script>
 </body>
 </html>
